@@ -1,68 +1,172 @@
 
 
 /* ************************************************************************************
- * Use anywhere slideshow
+ * Media Resources
  * ************************************************************************************ */
-.fadein 
+ 
+/* Hide initially; we only want people to see this if scripting is on and the starts align */
+#block-cck-blocks-field-terms-of-use,
+#block-cck-blocks-field-media-resources
 {
-	position:relative;
-	width:100%;
-	height:auto;
-	background-color: black;
-	overflow: hidden;
+	display: none;
 }
-.fadein .slideitem 
+
+.entry
 {
-	position:absolute;
-	top:0;
-	width: auto;
+	clear: both;
+}
+ 
+#media_resources_js
+{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.7);
+	z-index: 300;
+	width: 100%;
+	height: 100vh;
+}
+
+#media_resources_js #scroll_wrap
+{
+	height: 100vh;
+	overflow: scroll;
+}
+
+#media_resources_js .media_inner
+{
+	background-color: white;
+	width: 70%;
+	max-width: 800px;
+	margin: 30px auto;
+	height: auto;
+	position: relative;
+	padding: 2em;
+}
+ 
+#media_resources_js .field-name-field-media-resources > .field-items > .field-item
+{
+	clear: both;
+	margin: 1.5em 0;
+}
+
+
+#media_resources_js .field-item p
+{
+	margin: 0;
+	padding: 0 0 0.5em 0;
+}
+
+#media_resources_js  .image
+{
+	float: left;
+	width: 200px;
+	margin: 4px 1em 0 0;
 	text-align: center;
 }
-.fadein .slideitem img
+
+#media_resources_js .image img
 {
-	margin: auto;
+	width: 200px;
 	height: auto;
+}
+
+#media_resources_js .image img.img_vertical
+{
+	height: 200px;
 	width: auto;
 }
-.fadein .slidetitle 
+
+#media_resources_js #block-cck-blocks-field-terms-of-use
 {
-	position:absolute;
-	left:0;
-	bottom: 0px;
-	width: 100%;
-	background-color: rgba(0, 0, 0);
-	background-color: rgba(0, 0, 0, 0.75);
-	color: white;
+	margin: 1em 0;
+}
+
+#media_resources_js .media_inner h2
+{
+	color: #8C8179;
+	background-color: transparent;
+	background-image: none;
+	margin: 0 0 0.5em 0;
 	padding: 0;
-	margin: 0;
+	font-weight: normal;
+	color: #8c8179;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 600;
+	font-size: 2.667em;
+	line-height: 1.4em;
+	text-transform: none;
+	left: 0;
 }
 
-.slidetitle p 
+#media_close
 {
-	margin: 0;
-	padding: 10px;
+	background-image: url('../images/roundclose.png');
+	height: 36px;
+	width: 36px;
+	font-size: 0px;
+	color: transparent;
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin-top: -18px;
+	margin-right: -18px;
+	background-position: 0px 0px;
 }
 
-#slidethumbs 
+#media_close:hover
 {
-	height: 50px;
-	overflow: hidden;
-	white-space: nowrap;
-	position: relative;
-	z-index: 2;
+	background-position: 36px 0px;
 }
-#thumbwrapper
+
+.media_download
 {
-	height: 50px;
+	text-align: center;
 }
-#slidethumbs img 
+
+ 
+#media_resources_js  .field-name-field-media-image
 {
-	height: 50px;
+	width: 40%;
+	margin: 4px 0 0 0;
+}
+
+
+#media_resources_js  .field-name-field-media-description,
+#media_resources_js  .field-name-field-media-credits,
+.media_download
+{
+	width: 56%;
+	float: right;
+}
+
+#media_resources_js .field-name-field-media-resources img
+{
+	width: 100%;
+	height: auto;
+}
+
+#media_resources_js .field-name-field-media-resources img.img_vertical
+{
+	height: 200px;
 	width: auto;
-	opacity: 0.5;
 }
-
-#slidethumbs img:first-child
+ 
+.media_download
 {
-	opacity: 1;
+	text-align: left;
+}
+ 
+
+#media_button
+{
+	color: white;
+	font-weight: 700;
+	background-color: tomato;
+	padding: 1em;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
 }
